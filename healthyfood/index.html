@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="UTF-8">
+    <title>Healthy Food</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style_6.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<!-- Icons -->
+<svg style="display: none;">
+    <symbol id="facebook" viewBox="0 0 430.113 430.114">
+        <g>
+            <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+        </g>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </g>
+    </symbol>
+    <symbol id="inst" viewBox="0 0 511 511.9">
+        <g>
+            <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+        </g>         
+    </symbol>
+</svg>
+
+
+
+<!-- Header -->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="header__logo">
+                <img class="header__img" src="logo.png" alt="">
+            </div>
+
+            <nav class="nav">
+                <a href="#" class="nav__link" data-scroll="#intro">Home</a>
+                <a href="#" class="nav__link" data-scroll="#menu">Our Menu</a>
+                <a href="#" class="nav__link" data-scroll="#promo">Promo</a>
+                <a href="#" class="nav__link" data-scroll="#order">Order</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item"></span>
+            </button>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- Intro -->
+<div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__title">Healthy Food Restaraunt</div>
+            <div class="intro__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Cards -->
+<div class="cards" id="menu">
+    <div class="container">
+        <div class="card__title">Popular Menu</div>
+        <div class="card">
+            <!-- <div class="card__title">Popular Menu</div> -->
+
+            <div class="card__item">
+                <img src="card/1.png" alt="" class="card__img">
+                <div class="card__content">
+                    <div class="card__name">Noodles</div>
+                    <div class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing...
+                    </div>
+                    <div class="card__cost">$13</div>
+                </div>
+            </div>
+
+            <div class="card__item">
+                <img src="card/2.png" alt="" class="card__img">
+                <div class="card__content">
+                    <div class="card__name">Noodles</div>
+                    <div class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing...
+                    </div>
+                    <div class="card__cost">$13</div>
+                </div>
+            </div>
+
+            <div class="card__item">
+                <img src="card/3.png" alt="" class="card__img">
+                <div class="card__content">
+                    <div class="card__name">Noodles</div>
+                    <div class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing...
+                    </div>
+                    <div class="card__cost">$13</div>
+                </div>
+            </div>
+
+            <!-- <a href="#" class="btn">Show more</a> -->
+
+        </div>
+        <a href="#" class="btn">Show more</a>
+    </div>
+</div>
+
+
+<!-- Discount -->
+<div class="discount">
+
+    <img src="discount.jpg" alt="" class="discount__img">
+
+
+    <div class="container">
+        <div class="discount__inner">
+
+            <!-- <div class="discount__item">
+                <img src="discount.jpg" alt="" class="discount__img">
+            </div> -->
+
+            <div class="discount__item">
+                <div class="discount__title">
+                    Discount up to 50% All Menu
+                </div>
+                <div class="discount__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <a href="#" class="btn  btn--discount">Read More</a>
+            </div>
+
+        </div>
+    </div>
+</div>  <!-- /.discount-->
+
+
+<!-- Promo -->
+
+<div class="promo" id="promo">
+
+    <div class="container">
+        <div class="promo__inner">
+
+            <div class="promo__item">
+                <div class="promo__title">
+                    January's Promo: Buy 1 Get 1 Free!
+                </div>
+                <div class="promo__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <a href="#" class="btn btn--discount">Read More</a>
+            </div>
+
+        </div>
+        <!-- <img src="promo.jpg" alt="" class="promo__img"> -->
+    </div>
+
+    <img src="promo.jpg" alt="" class="promo__img">
+
+</div>  <!-- /.promo-->
+
+
+<!-- Order -->
+<div class="order" id="order">
+    <div class="container">
+        <div class="order__header">How To Order</div>
+        <div class="order__inner">
+
+
+            
+            <div class="order__item">
+                <div class="order__num">01</div>
+                <div class="order__title">Order</div>
+                <div class="order__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                </div>
+            </div>
+
+            <div class="order__item">
+                <div class="order__num">02</div>
+                <div class="order__title">Choose Menu</div>
+                <div class="order__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                </div>
+            </div>
+
+            <div class="order__item">
+                <div class="order__num">03</div>
+                <div class="order__title">Delivery</div>
+                <div class="order__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>  <!-- /.order-->
+
+
+<!-- Delivery -->
+<div class="delivery">
+    <div class="container">
+        <div class="delivery__inner">
+            <div class="delivery__title">Free Delivery</div>
+            <div class="delivery__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <a href="" class="btn btn--delivery">Get Voucher</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Reviews -->
+<div class="reviews">
+    <div class="container">
+        <div class="review__inner">
+            <div class="reviews__item">
+                <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                </div>
+                <div class="reviews__author">Agus Waiters</div>
+            </div>
+
+            <div class="social">
+
+                <a class="social__item" href="#" target="_blank">
+                    <svg class="social__icon">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+
+                <a class="social__item" href="#" target="_blank">
+                    <svg class="social__icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+
+                <a class="social__item" href="#" target="_blank">
+                    <svg class="social__icon t">
+                        <use xlink:href="#inst"></use>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>  <!-- /.reviews-->
+
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__item">
+                <div class="footer__title">About</div>
+                <div class="footer__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+
+            <div class="footer__item small">
+                <div class="footer__title">About</div>
+                <div>
+                    <a href="#" class="footer__link">Team</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Join us</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Ethic</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Goals</a>
+                </div>
+            </div>
+
+            <div class="footer__item small">
+                <div class="footer__title">About</div>
+                <div>
+                    <a href="#" class="footer__link">Team</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Join us</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Ethic</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Goals</a>
+                </div>
+            </div>
+
+            <div class="footer__item small">
+                <div class="footer__title">About</div>
+                <div>
+                    <a href="#" class="footer__link">Team</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Join us</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Ethic</a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link">Goals</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="site_6.js"></script>
+
+</body>
+</html>
