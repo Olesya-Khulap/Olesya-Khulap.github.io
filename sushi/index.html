@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="UTF-8">
+    <title>Sushi</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style_5.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<!-- Icons -->
+<svg style="display: none;">
+    <symbol id="facebook" viewBox="0 0 430.113 430.114">
+        <g>
+            <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+        </g>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </g>
+    </symbol>
+    <symbol id="whatsapp" viewBox="-23 -21 682 682.66669">
+        <g>
+            <path d="m544.386719 93.007812c-59.875-59.945312-139.503907-92.9726558-224.335938-93.007812-174.804687 0-317.070312 142.261719-317.140625 317.113281-.023437 55.894531 14.578125 110.457031 42.332032 158.550781l-44.992188 164.335938 168.121094-44.101562c46.324218 25.269531 98.476562 38.585937 151.550781 38.601562h.132813c174.785156 0 317.066406-142.273438 317.132812-317.132812.035156-84.742188-32.921875-164.417969-92.800781-224.359376zm-224.335938 487.933594h-.109375c-47.296875-.019531-93.683594-12.730468-134.160156-36.742187l-9.621094-5.714844-99.765625 26.171875 26.628907-97.269531-6.269532-9.972657c-26.386718-41.96875-40.320312-90.476562-40.296875-140.28125.054688-145.332031 118.304688-263.570312 263.699219-263.570312 70.40625.023438 136.589844 27.476562 186.355469 77.300781s77.15625 116.050781 77.132812 186.484375c-.0625 145.34375-118.304687 263.59375-263.59375 263.59375zm144.585938-197.417968c-7.921875-3.96875-46.882813-23.132813-54.148438-25.78125-7.257812-2.644532-12.546875-3.960938-17.824219 3.96875-5.285156 7.929687-20.46875 25.78125-25.09375 31.066406-4.625 5.289062-9.242187 5.953125-17.167968 1.984375-7.925782-3.964844-33.457032-12.335938-63.726563-39.332031-23.554687-21.011719-39.457031-46.960938-44.082031-54.890626-4.617188-7.9375-.039062-11.8125 3.476562-16.171874 8.578126-10.652344 17.167969-21.820313 19.808594-27.105469 2.644532-5.289063 1.320313-9.917969-.664062-13.882813-1.976563-3.964844-17.824219-42.96875-24.425782-58.839844-6.4375-15.445312-12.964843-13.359374-17.832031-13.601562-4.617187-.230469-9.902343-.277344-15.1875-.277344-5.28125 0-13.867187 1.980469-21.132812 9.917969-7.261719 7.933594-27.730469 27.101563-27.730469 66.105469s28.394531 76.683594 32.355469 81.972656c3.960937 5.289062 55.878906 85.328125 135.367187 119.648438 18.90625 8.171874 33.664063 13.042968 45.175782 16.695312 18.984374 6.03125 36.253906 5.179688 49.910156 3.140625 15.226562-2.277344 46.878906-19.171875 53.488281-37.679687 6.601563-18.511719 6.601563-34.375 4.617187-37.683594-1.976562-3.304688-7.261718-5.285156-15.183593-9.253906zm0 0" fill-rule="evenodd"/>
+        </g>
+    </symbol>
+    <symbol id="inst" viewBox="0 0 511 511.9">
+        <g>
+            <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+        </g>         
+    </symbol>
+</svg>
+
+
+<!-- Header -->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            
+            <div class="header__logo">
+                <img class="header__logo" src="logo.png" alt="">
+            </div>
+
+            <nav class="nav">
+                <a href="#" class="nav__link" data-scroll="#intro">Home</a>
+                <a href="#" class="nav__link" data-scroll="#product">Product</a>
+                <a href="#" class="nav__link" data-scroll="#promo">Promo</a>
+                <a href="#" class="nav__link" data-scroll="#about">About</a>
+                <a href="#" class="nav__link" data-scroll="#contact">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item"></span>
+            </button>
+
+        </div> <!-- /.header__inner-->
+    </div>  <!-- /.container-->
+</header>
+
+
+<!-- Intro -->
+<div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__title">Delicious Sushi</div>
+            <div class="intro__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut. 
+            </div>
+
+            <a href="#" class="btn">Order now</a>
+
+        </div>
+    </div>
+</div>  <!-- /.intro-->
+
+
+<!-- Best seller -->
+<section class="section sell" id="product">
+    <div class="container">
+        <div class="section__header">
+            <div class="section__title">Best Seller</div>
+            <div class="section__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut. 
+            </div>
+        </div>  <!-- /.section__header-->
+
+        <div class="card">
+            
+            <div class="card__item">
+                <img src="card/1.png" alt="" class="card__img">
+                <div class="card__title">Title Here</div>
+                <div class="card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+            </div>
+
+            <div class="card__item">
+                <img src="card/2.png" alt="" class="card__img">
+                <div class="card__title">Title Here</div>
+                <div class="card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+            </div>
+
+            <div class="card__item">
+                <img src="card/3.png" alt="" class="card__img">
+                <div class="card__title">Title Here</div>
+                <div class="card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+            </div>
+
+        </div>  <!-- /.card-->
+
+    </div>
+</section> <!-- /.section-->
+
+
+<!-- Tasty -->
+<div class="taste" id="promo">
+    <div class="container">
+        <div class="taste__inner">
+            
+            <div class="taste__item">
+                <img class="taste__img" src="img.jpg" alt="">
+            </div>
+
+            <div class="taste__item">
+                <div class="taste__title">best Tasty</div>
+                <div class="taste__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut. 
+                </div>
+                <a href="#" class="btn btn--taste">Order now</a>
+            </div>
+
+        </div>
+    </div>
+</div>  <!-- /.taste-->
+
+
+<section class="section" id="about"> 
+    <div class="container">
+        <div class="section__header second">
+            <div class="section__title">Statistics</div>
+            <div class="section__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut. 
+            </div>
+        </div>
+
+        <div class="stat">
+
+            <div class="stat__item">
+                <div class="stat__content">
+                    <div class="stat__num">123</div>
+                    <div class="stat__text">store</div>
+                </div>
+            </div>
+
+            <div class="stat__item">
+                <div class="stat__content">
+                    <div class="stat__num">100</div>
+                    <div class="stat__text">menu</div>
+                </div>  
+            </div>
+
+            <div class="stat__item">
+                <div class="stat__content">
+                    <div class="stat__num">200</div>
+                    <div class="stat__text">chef</div>
+                </div>
+            </div>
+        </div>  <!-- /.stat-->
+
+    </div>
+</section>
+
+
+<!-- Delicious -->
+<div class="delicious">
+    <div class="container">
+        <div class="del">
+            
+            <div class="del__item">
+                <img class="del__img" src="img2.jpg" alt="">
+            </div>
+
+            <div class="del__item">
+                <div class="del__title">Delicious</div>
+                <div class="del__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut. 
+                </div>
+                <a href="#" class="btn btn--taste">order now</a>
+            </div>
+
+        </div>
+    </div>
+</div>  <!-- /.delicious-->
+
+
+<!-- Cooker -->
+<div class="cooker">
+    <div class="container">
+        <div class="cook">
+            <img class="cook__img" src="photo.png" alt="">
+            <div class="cook__text">
+                If you are a culinary fan, if you like to spend time in your kitchen,
+                you likely find yourself looking for reliable resources through which you can
+            </div>
+            <div class="cook__name">Phoebe Frazier</div>
+        </div>
+    </div>
+</div>  <!-- cooker-->
+
+
+<!-- Subscribe -->
+<div class="sub" id="contact">
+    <section class="section section--last">
+        <div class="container">
+            
+            <div class="section__header last">
+                <div class="section__title">Subscribe</div>
+                <div class="section__subtitle laast">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut. 
+                </div>
+            </div>
+
+
+                <div class="container">
+
+                    <div class="suub">
+
+                        <form class="subscribe" action="/" method="POST">
+                            <input class="sub_inp" type="email" placeholder="Your Email">
+                            <button class="subscribe__btn">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__item first">
+                <div class="footer__title">Title Here</div>
+                <div class="footer__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                </div>
+
+                <div class="footer__social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon t">
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon t">
+                            <use xlink:href="#whatsapp"></use>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer__item i k">
+                <div class="footer__title">About</div>
+                <div class="link">
+                    <a href="#" class="footer__link">History</a>
+                </div>
+                
+                <div class="link">
+                    <a href="#" class="footer__link">Our Team</a>
+                </div>
+                
+                <div class="link">
+                    <a href="#" class="footer__link">Brand Guidelines</a>
+                </div>
+                
+                <div class="link">
+                    <a href="#" class="footer__link">Terms&Condition</a>
+                </div>
+                
+                <div class="link">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                </div>
+            </div>  <!-- /.footer__item-->
+
+            <div class="footer__item i k">
+                <div class="footer__title">Services</div>
+                <div class="link">
+                    <a href="#" class="footer__link">How to order</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="footer__link">Our product</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="footer__link">Order Status</a>
+                </div>
+
+                <div class="link">
+                    <a href="#"class="footer__link">Promo</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="footer__link">Payment Method</a>
+                </div>
+            </div>  <!-- /.footer__item-->
+
+            <div class="footer__item i">
+                <div class="footer__title">Other</div>
+                <div class="link">
+                    <a href="#" class="footer__link">Contact Us</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="footer__link">Help</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="footer__link">Privacy</a>
+                </div>
+            </div>  <!-- /.footer__item-->
+
+        </div>
+    </div>
+</div>  <!-- /.footer-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="site_5.js"></script>
+
+</body>
+</html>
