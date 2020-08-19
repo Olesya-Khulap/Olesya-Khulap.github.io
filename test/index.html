@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Слова</title>
+    <link rel="stylesheet" href="test.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+
+
+</head>
+
+<body>
+
+<div class="level">
+    <div class="container">
+        <div class="level__inner">
+
+            <a href="menu.html" class="back">
+            <span>В меню</span>
+            </a>
+            
+            <div class="level__title">Уровень 1</div>
+        
+            <div class="words">
+                <div class="word" id="L0">_ _ _ _  <a class="hint" href="#" id="h0">+</a></div>
+                <div class="word" id="L1">_ _ _ _  <a class="hint" href="#" id="h1">+</a></div>
+                <div class="word" id="L2">_ _ _  <a class="hint" href="#" id="h2">+</a></div>
+                <div class="word" id="L3">_ _ _ _  <a class="hint" href="#" id="h3">+</a></div>
+                <div class="word" id="L4">_ _ _ _ _  <a class="hint" href="#" id="h4">+</a></div>
+                <div class="word" id="L5">_ _ _ _  <a class="hint" href="#" id="h5">+</a></div>
+                <div class="word" id="L6">_ _ _ _  <a class="hint" href="#" id="h6">+</a></div>
+                <div class="word" id="L7">_ _ _  <a class="hint" href="#" id="h7">+</a></div>
+
+            </div>
+
+
+            <div class="enter">
+                <div class="window"></div>
+
+                <div class="buttons">
+                    <a href="#" class="btn btn--ok" id="ok">OK</a>
+                    <a href="#" class="btn btn--sb" id="sbros">СБРоС</a>
+                    <!-- <a href="#" class="btn btn--sb" id="?">?</a> -->
+                </div>
+            </div>
+
+
+            <div class="initialWord">
+                <a href="#" class="letter">Р</a>
+                <a href="#" class="letter">О</a>
+                <a href="#" class="letter">У</a>
+                <a href="#" class="letter">М</a>
+                <a href="#" class="letter">И</a>
+                <a href="#" class="letter">Н</a>
+                <a href="#" class="letter">Г</a>
+
+            </div>
+            <a href="#" class="btn btn--ask" id="ask">?</a>
+           
+            
+
+            <div class="move">
+
+                <a href="level_2.html" class="btn btn--next" id="next">Уровень 2</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m0">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+            Человекоподобный карлик из древней мифологии
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m1">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+            Звук сопровождающий молнию
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m2">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+            Все, что существует на Земле и в космосе
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m3">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+            Духовой музыкальный инструмент
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m4">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+            Музыкальный лад
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m5">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+            Искусство изменения внешности человека
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m6">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+            Неправомерное завладение автомобилем
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="m7">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+            Образование из костного вещества на голове животного
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal" id="question0">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            Вопрос: Сколько позвонков в шейном отделе позвоночника жирафа?
+        
+        
+            <div class="form__group">
+                <input type="text" class="mytext0" placeholder="Введите ответ">
+                <button class="answer0" method="post" id="answer0" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+            <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+            <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+<div class="modal" id="question1">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            Вопрос: Чем заканчиваются день и ночь?
+        
+        
+            <div class="form__group">
+                <input type="text" class="mytext1" placeholder="Введите ответ">
+                <button class="answer1" method="post" id="answer1" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+            <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+            <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+<div class="modal" id="question2">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            Вопрос: Сколько спутников у земли? дайте ответ цифрой
+        
+        
+            <div class="form__group">
+                <input type="text" class="mytext2" placeholder="Введите ответ">
+                <button class="answer2" method="post" id="answer2" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+            <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+            <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+<div class="modal" id="question3">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            Вопрос: Какой город является столицей Мадагаскара?
+        
+        
+            <div class="form__group">
+                <input type="text" class="mytext3" placeholder="Введите ответ">
+                <button class="answer3" method="post" id="answer3" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+            <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+            <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+<div class="modal" id="question4">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            Вопрос: Что обозначает О3 в химии?
+        
+        
+            <div class="form__group">
+                <input type="text" class="mytext4" placeholder="Введите ответ">
+                <button class="answer4" method="post" id="answer4" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+            <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+            <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+<div class="modal" id="question5">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            Вопрос: Единица измерения силы тока?
+        
+        
+            <div class="form__group">
+                <input type="text" class="mytext5" placeholder="Введите ответ">
+                <button class="answer5" method="post" id="answer5" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+        <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+        <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+<div class="modal" id="question6">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            Вопрос: Как называется зеленый пигмент, окрашивающий листья растений?
+        
+        
+            <div class="form__group">
+                <input type="text" class="mytext6" placeholder="Введите ответ">
+                <button class="answer6" method="post" id="answer6" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+            <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+            <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+<div class="modal" id="question7">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            Вопрос: Сколько хромосом в геноме человека?
+        
+        
+            <div class="form__group">
+                <input type="text" class="mytext7" placeholder="Введите ответ">
+                <button class="answer7" method="post" id="answer7" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+            <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+            <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./test.js"></script>
+
+</body>
+</html>
