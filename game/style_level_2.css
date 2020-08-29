@@ -516,6 +516,12 @@ input {
         max-width: 320px;
     }
     
+    .hint {
+        padding: 0 8px;
+        font-size: 17px;
+        right: 20%;
+    }
+    
     
     /*  Btn  */
     
@@ -558,6 +564,13 @@ input {
 
     .word {
         font-size: 20px;
+    }
+    
+    .hint {
+        padding: 0 7px;
+        font-size: 15px;
+        top: -2px;
+        border-width: 3px;
     }
 
     
@@ -665,6 +678,14 @@ input {
         font-size: 16px;
     }
 
+    .hint {
+        padding: 0 6px;
+        font-size: 12px;
+        top: -2px;
+        border-width: 3px;
+        right: 30%;
+    }
+    
     
     /* Window */
     
