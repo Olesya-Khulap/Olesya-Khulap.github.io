@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    background-color: #ee9ca7;
+}
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* CONTAINEr ===========
+======================*/
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Rules */
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 820px;
+    position: relative;
+
+    background: #ff9966; 
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+.rules__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    
+    text-align: center;
+    font-weight: 700;
+}
+
+.rules__title{
+    margin-top: 85px;
+    
+    font-weight: 800;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.rules__text {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    
+    font-size: 30px;
+}
+
+.btn {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 17px 34px;
+    
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    
+    background-color: #b31217;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 3px 4px 8px rgba(0,0,0,0.5);
+    
+    transition: background .2s linear;
+}
+
+.btn:hover {
+    background-color: #DC281E;
+}
+
+
+li {
+    margin-bottom: 30px;
+    
+    text-align: left;
+}
+
+.luck {
+    margin-bottom: 40px;
+}
+
+
+/* Media */
+
+@media(max-width: 813px) {
+
+    .rules__title {
+        font-size: 65px;
+        margin-top: 50px;
+    }
+
+    .rules__text {
+        margin-top: 35px;
+        font-size: 25px;
+    }
+}
+
+
+@media(max-width: 569px) {
+
+    .rules__title {
+        font-size: 50px;
+        margin-top: 35px;
+    }
+
+    .rules__text {
+        margin-top: 35px;
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

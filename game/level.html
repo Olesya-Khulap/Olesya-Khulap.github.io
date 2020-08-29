@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Слова</title>
+    <link rel="stylesheet" type="text/css" href="style_level_1.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <link id="favicon" rel="shortcut icon" type="image/png" href="fav_menu/favicon-32x32.png" />
+
+</head>
+
+<body class="no-scroll">
+
+<div class="level">
+    <div class="container">
+        <div class="level__inner">
+
+            <a href="menu.html" class="back">
+            <span>В меню</span>
+            </a>
+            
+            <div class="level__title">Уровень </div>
+        
+            <div class="words">
+                <div class="word" id="w0"><a class="hint" href="#" id="h0">+</a></div>
+                <div class="word" id="w1"><a class="hint" href="#" id="h1">+</a></div>
+                <div class="word" id="w2"><a class="hint" href="#" id="h2">+</a></div>
+                <div class="word" id="w3"><a class="hint" href="#" id="h3">+</a></div>
+                <div class="word" id="w4"><a class="hint" href="#" id="h4">+</a></div>
+                <div class="word" id="w5"><a class="hint" href="#" id="h5">+</a></div>
+                <div class="word" id="w6"><a class="hint" href="#" id="h6">+</a></div>
+                <div class="word" id="w7"><a class="hint" href="#" id="h7">+</a></div>
+
+            </div>
+
+
+            <div class="enter">
+                <div class="window"></div>
+
+                <div class="buttons">
+                    <a href="#" class="btn btn--ok" id="ok">OK</a>
+                    <a href="#" class="btn btn--sb" id="sbros">СБРоС</a>
+                    <!-- <a href="#" class="btn btn--sb" id="?">?</a> -->
+                </div>
+            </div>
+
+
+            <div class="initialWord">
+                <a href="#" class="letter" id="l0"></a>
+                <a href="#" class="letter" id="l1"></a>
+                <a href="#" class="letter" id="l2"></a>
+                <a href="#" class="letter" id="l3"></a>
+                <a href="#" class="letter" id="l4"></a>
+                <a href="#" class="letter" id="l5"></a>
+                <a href="#" class="letter" id="l6"></a>
+
+            </div>
+            <a href="#" class="btn btn--ask" id="ask">?</a>
+           
+            
+
+            <div class="move">
+                <a href="level.html?level=1" class="btn btn--prev prev--1" id="prev1">Уровень 1</a>
+                <a href="level.html?level=2" class="btn btn--prev prev--2" id="prev2">Уровень 2</a>
+                <a href="level.html?level=3" class="btn btn--prev prev--3" id="prev3">Уровень 3</a>
+                <a href="level.html?level=4" class="btn btn--prev prev--4" id="prev4">Уровень 4</a>
+
+                <a href="level.html?level=2" class="btn btn--next next--2" id="next2">Уровень 2</a>
+                <a href="level.html?level=3" class="btn btn--next next--3" id="next3">Уровень 3</a>
+                <a href="level.html?level=4" class="btn btn--next next--4" id="next4">Уровень 4</a>
+                <a href="level.html?level=5" class="btn btn--next next--5" id="next5">Уровень 5</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div class="modal__content">
+        <div class="modal__hint"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="question">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            <div class="modal__text"></div>
+            <div class="form__group">
+                <input type="text" class="mytext" placeholder="Введите ответ">
+                <button class="answer" method="post" id="answer" placeholder="OK">ОК</button>
+            </div>
+            
+        </div>
+        
+            <div id="modal__hidden" class="modal__hidden">Вау! Вы правильно ответили на вопрос и теперь можете получить Вашу подсказку</div>
+            
+            <div class="modal__wrong">Ой, кажется Вы неправильно ответили на вопрос. Попробуйте получить подсказку позже</div>
+        
+    </div>
+</div>
+
+
+<div class="modal" id="wrong">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            <div>Упс! (0_0)</div>
+            <div>Кажется, я не загадывала такое слово</div>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="modal" id="long">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            <div>Вы ввели слишком большое слово!</div>
+            <div>Я такое не загадывала :(</div>
+            <div>Попробуйте снова</div>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="modal" id="end">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img class="close__img" src="img/close.svg" alt="close">
+        </button>
+
+        <div id="modal__content" class="modal__content">
+            <div>Ваууу! Кажется, Вы угадали все слова!!!</div>
+            <div>Нажимайте на кнопку внизу и переходите на следующий уровень!</div>
+
+        </div>
+        
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./level.js"></script>
+
+</body>
+</html>
