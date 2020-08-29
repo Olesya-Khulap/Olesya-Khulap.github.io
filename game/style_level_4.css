@@ -163,6 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .word {
+    position: relative;
     width: 50%;
     max-width: 600px;
     
@@ -175,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hint {
     display: none;
-    padding: 0px 7px;
+    padding: 0px 11px;
     
     text-decoration: none;
     color: #15747c;
@@ -183,6 +184,11 @@ h1, h2, h3, h4, h5, h6 {
     
     border: 4px solid #15747c;
     border-radius: 50%;
+    
+    position: absolute;
+    top: 0;
+    right: 25%;
+    z-index: 1;
     
     transition: all .2s linear;
 }
