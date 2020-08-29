@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     
     background-color: #cb2d3e;
     
-    animation: move2 5s infinite;
+/*     animation: move2 5s infinite; */
 }
 
 .line3 {
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     
     background-color: #fff;
     
-/*     animation: move4 3s infinite; */
+    animation: move4 3s infinite;
 }
 
 
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-@keyframes move2 {
+/* @keyframes move2 {
     0% {
         transform: translateY(-100px) translateX(1000px) rotate(0deg);
     }
@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
     100% {
         transform:  translateX(-2000px) translateY(400px) rotate(-90deg);
     }
-}
+} */
 
 
 @keyframes move3 {
@@ -300,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* @keyframes move4 {
+@keyframes move4 {
     0% {
         transform: translateY(-100px) translateX(600px) rotate(0deg);
     }
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
     100% {
         transform:  translateX(2000px) translateY(550px) rotate(90deg);
     }
-} */
+}
 
 
 
